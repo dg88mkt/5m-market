@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5M MARKET</title>
+    <link rel="icon" type="image/x-icon" href="https://imgs.search.brave.com/SXPrbKdDL7JtcHRWaCY52eA1GWhaVQEPRtqt_lRdxxg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/bnVtYmVyLTUtZ3Jh/ZGllbnQtbG9nby1k/ZXNpZ25fNDc0ODg4/LTQ1MjguanBnP3Nl/bXQ9YWlzX2h5YnJp/ZCZ3PTc0MCZxPTgw">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo" onclick="showPage('home')">
+                <span class="highlight">5M</span>MARKET
+            </div>
+            <ul class="nav-menu">
+                <li><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('store')">Store</a></li>
+                <li><a href="#" class="btn-discord">Join Discord</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home-page" class="page-content">
+            <div class="hero-section">
+                <div class="hero-badge">Verified Account Supplier</div>
+                <h1>Elite GTA Accounts <br><span class="gradient-text">Starting at $1.00</span></h1>
+                <p>Instant delivery. 100% Ban-free history. Choose from over 100+ fresh and modded accounts ready for FiveM.</p>
+                <div class="hero-btns">
+                    <button class="btn-main" onclick="showPage('store')">Start Shopping</button>
+                    <button class="btn-alt" onclick="window.location.href='warranty.html'">View Warranty</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="store-page" class="page-content hidden">
+            <div class="container">
+                <div class="store-header">
+                    <h2>Marketplace</h2>
+                    <p id="stock-count">Syncing live stock...</p>
+                </div>
+                
+                <div id="product-grid" class="product-grid"></div>
+
+                <div id="pagination" class="pagination-container"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <div class="logo"><span class="highlight">5M</span>MARKET</div>
+                <p>The #1 trusted source for high-end, budget-friendly gaming accounts.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Legal & Support</h4>
+                <a href="warranty.html">Warranty Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Support</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 5M Market. All rights reserved. Not affiliated with Rockstar Games or Take-Two Interactive.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
